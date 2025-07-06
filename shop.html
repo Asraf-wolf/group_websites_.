@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Products</title>
+</head>
+ <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfaf6;
+    }
+
+  
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f5ebe0; 
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #a47148; 
+      letter-spacing: 1px;
+    }
+
+    .navbar .menu {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .navbar a {
+      color: #d88c9a;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background-color: #fdecef; 
+      color: #a47148; 
+    }
+
+    
+    .catalog {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .card {
+      background-color: white;
+      border: 2px solid #d8c3a5;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card .image {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background-color: #fdecef;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+    }
+
+    .card .title {
+      color: #a47148;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar .menu {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 1rem;
+      }
+
+      .navbar a {
+        width: 100%;
+        padding: 0.75rem 1rem;
+      }
+
+      .catalog {
+        padding: 1rem;
+        gap: 1rem;
+      }
+    }
+  </style>
+<body>
+	<div class="navbar">
+		<div class="logo">Shop</div>
+		<div class="menu">
+			<a href="#men">Men</a>
+			<a href="#women">Women</a>
+			<a href="#children">Children</a>
+			<a href="#special">Special</a>
+			<a href="index.html">Home</a>
+		</div>
+	</div>
+	<h2 style="color: #a47148;">Gifts for Men</h2>
+	<div class="catalog" id="men">
+		<div class="card">
+		<img class="image" src="images/gifts_10_men.jpg" alt="gifts_10_for_men">
+		<div class="title">Men's Birthday Bundle<br>RM31.50</div>	
+		</div>
+		<div class="card">
+		<img class="image" src="images/gifts_11_men.jpg" alt="gifts_11_for_men">
+		<div class="title">Men's Birthday Bundle + Dashing Perfumes<br>RM41.50</div>	
+		</div>
+		<div class="card">
+		<img class="image" src="images/gifts_12_men.jpg" alt="gifts_12_for_men">
+		<div class="title">Father's Day Special + Dashing Products + Teddy Bear<br>RM47.90</div>	
+		</div>
+		<div class="card">
+		<img class="image" src="images/gifts_13_men.jpg" alt="gifts_13_for_men">
+		<div class="title">Men's Birthday Bundle (Husband Edition) + Skin Product<br>RM45.50</div>
+	    </div>
+	    <div class="card">
+	    <img class="image" src="images/gifts_15_men.jpg" alt="gifts_15_for_men">
+	    <div class="title">Men's Ultimate Gift Bundle<br>RM399.00</div>	
+	    </div>
+	</div>
+	<h2 style="color: #a47148;">Gifts for Women</h2>
+	<div class="catalog" id="women">
+		<div class="card">
+		<img class="image" src="images/gifts_01_women.jpg" alt="gifts_01_for_women">
+		<div class="title">Floral Bundle<br>RM25.90</div>	
+		</div>
+		<div class="card">
+		<img class="image" src="images/gifts_19_women.jpeg" alt="gifts_19_for_women">
+		<div class="title">Birthday Candies Bundle<br>RM41.90</div>	
+		</div>
+		<div class="card">
+		<img class="image" src="images/gifts_20_women.jpg" alt="gifts_20_for_women">
+		<div class="title">Birthday Bundle Gold<br>RM41.90</div>	
+		</div>
+		<div class="card">
+		<img class="image" src="images/gifts_21_women.jpg" alt="gifts_21_for_women">
+		<div class="title">Birthday Bundle Pink<br>RM41.90</div>
+	    </div>
+	    <div class="card">
+	  <img class="image" src="images/gifts_22_women.jpeg" alt="gifts_22_for_women">
+	    <div class="title">Birthday Bundle Red Roses<br>RM45.90</div>	
+	    </div>
+	</div>
+	<h2 style="color: #a47148;">Gifts for Children</h2>
+	<div class="catalog" id="children">
+		<div class="card">
+		<img class="image" src="images/gifts_05_children.jpg" alt="gifts_05_for_children">
+		<div class="title">Birthday Candy Bundle<br>RM33.50</div>	
+		</div>
+		<div class="card">
+		<img class="image" src="images/gifts_23_children.jpeg" alt="gifts_23_for_children">
+		<div class="title">Birthday Candy Duo<br>RM45.50</div>	
+		</div>
+		<div class="card">
+		<img class="image" src="images/gifts_24_children.jpg" alt="gifts_01_for_children">
+		<div class="title">Birthday Bundle Party Time<br>RM43.90</div>	
+		</div>
+		<div class="card">
+		<img class="image" src="images/gifts_25_children.jpg" alt="gifts_01_for_children">
+		<div class="title">Birthday Bundle Rainbow Party<br>RM42.90</div>
+	    </div>
+	    <div class="card">
+	    <img class="image" src="images/gifts_26_children.jpg" alt="gifts_01_for_children">
+	    <div class="title">Birthday Bundle Sky Party<br>RM40.90</div>	
+	    </div>
+	</div> 
+	<h2 style="color: #a47148;">Special Gifts</h2>
+	<div class="catalog" id="special">
+		<div class="card">
+		<img class="image" src="images/gifts_02_special.jpg" alt="gifts_0_special">
+		<div class="title">Custom Birtday Bundle + Name<br>RM45.90</div>	
+		</div>
+		<div class="card">
+		<img class="image" src="images/gifts_03_special.jpg" alt="gifts_03_special">
+		<div class="title">Graduation Bundle + Teddy Bear + Candies<br>RM50.90</div>	
+		</div>
+		<div class="card">
+		<img class="image" src="images/gifts_04_special.jpg" alt="gifts_04_special">
+		<div class="title">Graduation Bundle Lite<br>RM39.50</div>	
+		</div>
+		<div class="card">
+		<img class="image" src="images/gifts_06_special.jpg" alt="gifts_06_special">
+		<div class="title">Marriage Proposal Bundle<br>RM50.90</div>
+	    </div>
+	    <div class="card">
+	    <img class="image" src="images/gifts_07_special.jpg" alt="gifts_07_special">
+	    <div class="title">Birtday Bundle Trio<br>RM199.00</div>	
+	    </div>
+	    <div class="card">
+		<img class="image" src="images/gifts_08_special.jpg" alt="gifts_08_special">
+		<div class="title">Anniversary Bundle (Red Roses)<br>RM41.50</div>	
+		</div>
+		<div class="card">
+		<img class="image" src="images/gifts_09_special.jpg" alt="gifts_09_special">
+		<div class="title">Birthday Bundle + Custom Wording Balloons<br>RM38.90</div>	
+		</div>
+		<div class="card">
+		<img class="image" src="images/gifts_14_special.jpeg" alt="gifts_14_special">
+		<div class="title">Birthday Bundle (Mutual Gifts)<br>RM41.90</div>	
+		</div>
+		<div class="card">
+		<img class="image" src="images/gifts_16_special.jpg" alt="gifts_16_special">
+		<div class="title">Duo Gift Bundle<br>55.90</div>	
+		</div>
+		<div class="card">
+		<img class="image" src="images/gifts_17_special.jpg" alt="gifts_17_special">
+		<div class="title">Anniversary Bundle Xtra<br>RM70.90</div>	
+		</div>
+	</div> 
+	</div> 
+	
+
+<p align="center">Created by: Addam Aqmal</p>
+</body>
+</html>
